@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Panton";
+    src: url(../Panton-LightCaps.otf) format("opentype");
+}
+
+#kartka {
+    clear: both;
+    background: linear-gradient(90deg, rgba(15,15,15,0) 0%, rgb(152, 0, 0) 5%, rgb(152, 0, 0) 95%, rgba(15,15,15,0) 100%);
+    margin: 15vh auto 0 auto;
+    text-align: center;
+    width: calc(65%);
+    position: fixed;
+    top: 64px;
+    left: 156px;
+}
+
+body, html {
+    height: 90%;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: panton, serif;
+    transition: 1s ease-in-out;
+    color: #f0f8ff;
+}
+
+#body-index {
+    height: 100%;
+}
+
+#background {
+    width:100%;
+    top:0;
+    left:0;
+    position:fixed;
+    background-size: cover;
+    object-fit: cover;
+    background-color: #1C191B;
+    z-index: -3;
+    height:100vh;
+    background-image: url("../img/bg.jpg");
+    transition: 1s ease-in-out;
+}
+
+#left {
+    width: 80vw;
+}
+
+#right {
+    z-index: -2;
+    text-align: right;
+    width: 19vw;
+}
+
+#galazki {
+    height: 100vh;
+    margin: 0 -5px 0 0;
+}
+
+.bombki {
+    position: absolute;
+    width: 64px;
+    height: 80px;
+}
+
+#top {
+    font-size: 48px;
+}
+
+.div {
+    display: inline-block;
+}
+
+#zyczenia {
+    color: #71b361;
+    font-size: 24px;
+}
+
+.break {
+    font-size: 16px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) no-repeat;
+    background-size: 100%;
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.35);
+    z-index: 0;
+}
+
+@keyframes animate {
+    0% {
+        background-position: -750%;
+    }
+    100% {
+        background-position: 750%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Tło */
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,1);
+}
+
+/* Pasek */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(255, 0, 0) 25%, rgb(255, 0, 0) 75%, rgba(0,0,0,0) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(255, 0, 0) 25%, rgb(255, 0, 0) 75%, rgba(0,0,0,0) 100%);
+}
